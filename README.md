@@ -6,3 +6,5 @@ It's a Django web app that I wrote a batch file to run locally because I don't h
 The workflow is convoluted and involves editing a json file to manually add the details for each paper.
 It is not refined for general public use, and I don't plan on working on it any further to meet that end.
 But if anyone does want to work on creating a refined version, feel free to fork this repository and do so.
+
+![image](https://github.com/jezerjojo14/graphsnotemaking/assets/63692326/952c1d2a-5ca4-440b-8ab3-083f7629d83f)
