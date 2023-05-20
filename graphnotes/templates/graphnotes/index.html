@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{% static 'graphnotes/css/styles.css' %}">
+    </head>
+    <body>
+        <script src="{% static 'graphnotes/js/go.js' %}"></script>
+        <div id="allSampleContent">
+            {% include "graphnotes/script.html" with papers_json=papers_json_str %}
+            <div id="sample">
+                <div id="myDiagramDiv" style="width: 100vw; height: 100vh; position: relative; cursor: auto; font: 20px sans-serif;">
+                    <canvas tabindex="0" style="position: absolute; top: 0px; left: 0px; z-index: 2; user-select: none; touch-action: none; letter-spacing: normal; word-spacing: normal; width: 100%; height: 100%; cursor: auto;">This text is displayed if your browser does not support the Canvas HTML element.</canvas>
+                    <div style="position: absolute; overflow: auto; width: 100%; height: 100%; z-index: 1;">
+                        <div style="position: absolute; width: 1px; height: 1px;">
+                        </div>
+                    </div>
+                </div>
+                <div id="toolTipDIV" style="position: absolute; border: 1px solid white; background: #222; color: #ddd; z-index: 1000; display: none; font: 14px Rockwell; padding: 5px;">
+                    <p id="toolTipParagraph"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
